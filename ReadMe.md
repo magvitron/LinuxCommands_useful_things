@@ -10,7 +10,8 @@ expalining video: https://www.youtube.com/watch?v=-B3t8yYxda4
    - install : Remote VSCode by rafaelmaiolla.remote-vscode in visual studio code
    
 2. Rpi:
-   - Install  
+   - Install rmate (usually with ruby gems) 
+   - alias code='rmate -p 52698'
 ## TroubleShooting:
 1. Couldn't connect to TextMate! 
  - in vscode press F1 and select Remote:Stop Server
