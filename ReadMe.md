@@ -18,7 +18,20 @@ Copying files from your Raspberry Pi
 ```
 scp pi@192.168.1.3:myfile.txt .
 ```
+## Tensor Flow
+### Pi-Zero precompiled binary 
+```
+https://github.com/lhelontra/tensorflow-on-arm/releases
+```
+Use the below code for taking values
+```
+import tensorflow as  tf
 
+print(str(tf.__version__)) # should print the version
+interpreter = tf.lite.Interpreter(model_path) # for example if you just need the python tf lite runtime 
+```
+
+### P
 ## Activate a virtual env
 ```
 source ./python_env/bin/activate
