@@ -30,8 +30,6 @@ import tensorflow as  tf
 print(str(tf.__version__)) # should print the version
 interpreter = tf.lite.Interpreter(model_path) # for example if you just need the python tf lite runtime 
 ```
-
-### P
 ## Activate a virtual env
 ```
 source ./python_env/bin/activate
