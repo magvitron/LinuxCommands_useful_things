@@ -1,4 +1,12 @@
 # Raspberry pi stuffs 
+## Kill process with a PID
+```
+PID_val=$(ps -C "python3" -o pid=)
+kill -KILL $PID_val
+python3 cam_detect.py
+```
+use an sh for calling this.
+
 ## list all process:
 ```
 htop
