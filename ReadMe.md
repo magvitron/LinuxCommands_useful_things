@@ -1,4 +1,14 @@
-## SCP 
+# Raspberry pi stuffs 
+## list all process:
+```
+htop
+```
+kill process:
+```
+kill -KILL PID
+```
+
+## Secure file copy or SCP for Pi to windows file copying
 - Link: https://www.raspberrypi.org/documentation/remote-access/ssh/scp.md
 Copying files to your Raspberry Pi
 ```
