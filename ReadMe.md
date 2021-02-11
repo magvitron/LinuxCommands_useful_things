@@ -66,6 +66,3 @@ expalining video: https://www.youtube.com/watch?v=-B3t8yYxda4
 1. Couldn't connect to TextMate! 
  - in vscode press F1 and select Remote:Stop Server
  - in vscode press F1 and select Remote:Start Server
- 
-## install a .so file in library
-Something to do with ld config , needs investigation.
