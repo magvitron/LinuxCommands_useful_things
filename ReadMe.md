@@ -1,4 +1,7 @@
 # Raspberry pi stuffs 
+## Tensor flow how to do link:
+https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi/blob/master/Raspberry_Pi_Guide.md#part-1---how-to-set-up-and-run-tensorflow-lite-object-detection-models-on-the-raspberry-pi
+
 ## Kill process with a PID
 ```
 PID_val=$(ps -C "python3" -o pid=)
