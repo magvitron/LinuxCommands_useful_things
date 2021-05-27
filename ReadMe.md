@@ -71,3 +71,30 @@ expalining video: https://www.youtube.com/watch?v=-B3t8yYxda4
 1. Couldn't connect to TextMate! 
  - in vscode press F1 and select Remote:Stop Server
  - in vscode press F1 and select Remote:Start Server
+
+
+## STM 32 Clone chips debugging
+However, if you do end up with one, there is a way to get it working with OpenOCD. >>
+
+1.   Use OpenOCD as your debugger (GDB will not work)
+
+2.   Find the config file : stm32f1x.cfg
+
+Location is similar to this : >>
+
+C:\ST\STM32CubeIDE_1.3.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.debug.openocd_1.3.0.202002181050\resources\openocd\st_scripts\target
+
+3.   Add the following near the top of stm32f1x.cfg (before the first If – statement):
+
+set CPUTAPID 0
+
+The zero tells OpenOCD to ignore id numbers, which means all clones or genuine MCUs will work.
+
+4.     Save the changes. Now your flash and debug should work. 
+
+ 
+
+Note: If you change to OpenOCD without changing “stm32f1x.cfg”, you will get the following Error: “UNEXPECTED idcode: 0x2ba01477…. Expected: 0x1ba01477”, and you will again be stuck.
+
+Information Source: http://openocd.org/doc/html/TAP-Declaration.html#TAP-Declaration-Commands
+
