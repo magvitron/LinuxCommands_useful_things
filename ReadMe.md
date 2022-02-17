@@ -65,6 +65,10 @@ expalining video: https://www.youtube.com/watch?v=-B3t8yYxda4
 2. Rpi:
    - Install rmate (usually with ruby gems) 
    ```
+   sudo wget -O /usr/local/bin/rmate https://raw.github.com/aurora/rmate/master/rmate
+   sudo chmod a+x /usr/local/bin/rmate
+   ```
+   ```
    alias code='rmate -p 52698'
    ```
 ### TroubleShooting:
